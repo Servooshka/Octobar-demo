@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Octobar needs Claude for Startups | Octobar</title>
+  <meta name="description" content="Why the Octobar team is applying to the Claude for Startups programme: what it provides and how we plan to use Claude in the game.">
+  <link rel="canonical" href="https://octobar.dev/startups.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Octobar">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Why Octobar needs Claude for Startups | Octobar">
+  <meta property="og:description" content="What the Claude for Startups programme provides and how the Octobar team plans to use Claude.">
+  <meta property="og:url" content="https://octobar.dev/startups.html">
+  <meta property="og:image" content="https://octobar.dev/assets/img/hero-background.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Octobar</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="startups.html" aria-current="page">Claude for Startups</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container prose">
+    <p class="eyebrow">Programme application</p>
+    <h1>Why we need the Claude for Startups programme</h1>
+    <p>Octobar is a game we are making as a small team. Below is what the Anthropic programme provides, how we plan to use Claude in the game, and what is already in place on the site for the application.</p>
+    <!-- EDIT: add team size, roles and how long the team has worked on Octobar -->
+
+    <h2>What the programme provides</h2>
+    <p>According to the official programme page <a href="https://claude.com/programs/startups" rel="noopener">claude.com/programs/startups</a>:</p>
+    <ul>
+      <li><strong>$1,000 in API credits</strong> for each approved company. The credits are valid for six months.</li>
+      <li><strong>One free year of Claude Team</strong> for up to five seats. The offer is only for organisations that have not used Team before.</li>
+      <li><strong>Higher API rate limits</strong> for participants who receive programme credits. Specific figures are not published.</li>
+      <li><strong>Applied AI consultations</strong>: 45 minutes, once every two weeks.</li>
+      <li><strong>For founders backed by VCs from Anthropic's partner network:</strong> up to $100K in additional API credits, received through their venture fund.</li>
+      <li><strong>Claude Startup Stack</strong>: offers from partners worth up to $45K. These offers are made by independent third parties, not by Anthropic.</li>
+    </ul>
+    <p>Credits apply only to the direct Claude API (through Claude Console). They do not apply to AWS Bedrock, Google Cloud Vertex AI or other third-party platforms.</p>
+    <div class="note">Programme terms may change, and acceptance decisions are made by Anthropic. Before applying, check the current programme page and terms, not this description.</div>
+
+    <h2>How we plan to use Claude in Octobar</h2>
+    <!-- EDIT: review plans -->
+    <p><strong>Status: in development — the current public build uses hand-written dialogue.</strong> The Claude API is the core of the next version of Octobar. Nothing in this section is in the released game yet.</p>
+    <h3>1. Living patrons</h3>
+    <p>Coming to Octobar: players will talk to the bar's patrons in free text, and Claude will answer in character. Each reply is grounded in that patron's own lore and backstory, so Evelin, Furry, Gombik, Mr Krys, Lady Moth, Worm, Sun, Big Talk and Guy each keep a distinct voice across the nine campaign guests.</p>
+    <p>The conversation will affect the shift. A good exchange can change the order, the tip and how patient the guest stays; a poor one can make them leave early.</p>
+    <h3>2. World integration</h3>
+    <p>We are building a link between Claude and the game state. Claude will be given the day number, the drinks served and missed, which patrons the player has already met, and what was said in earlier conversations, including on previous days. The setting rules of the alternative 1920s will be part of the same context. The aim is for stories to evolve differently in each playthrough, with patrons referring to each other and to events in the bar.</p>
+    <h3>3. Guardrails</h3>
+    <ul>
+      <li><strong>Authored character sheets and a world bible</strong> are used as system prompts, so every patron stays within an established personality and the setting.</li>
+      <li><strong>Structured outputs:</strong> each reply is returned as JSON (reply text, mood change, order), which the Godot game parses and checks before acting on it.</li>
+      <li><strong>Content moderation</strong> on player input and on model output.</li>
+      <li><strong>Fallback to authored lines</strong> when the API is offline or unavailable, so the game still plays with the hand-written dialogue.</li>
+    </ul>
+    <h3>4. Why API credits matter</h3>
+    <p>Every conversation turn is a real-time model call, so development and playtesting need many of them. Credits would cover per-turn dialogue calls during development and playtesting, prompt iteration on the character sheets and world bible, and comparing models for latency and cost before we choose one.</p>
+    <h3>5. Claude Code for development (secondary)</h3>
+    <p>Claude Code will also help with GDScript work: finding and fixing bugs, writing tests and reviewing code. For example, the resource <code>random_character.tres</code> refers to the class <code>NonLoreCustomerData</code>, which does not exist in the project. This is a good example of a task to work through.</p>
+
+    <h2>Why credits matter for a small team</h2>
+    <p>Dialogue, balancing and localisation are tasks a small team usually does by hand, and slowly. Starting API credits would let us try these tasks in the first months without budgeting separately for the API, and decide whether to continue.</p>
+    <!-- EDIT: add funding status only if it is public and verified -->
+
+    <h2>Application checklist</h2>
+    <p>Requirements from the official programme materials and what is already on the site.</p>
+    <ul class="checklist">
+      <li><span class="box" aria-hidden="true"></span><span>Own domain <strong>octobar.dev</strong>. The CNAME file is in place.<span class="tag tag--done">done on the site</span><br><!-- EDIT: confirm DNS points to GitHub Pages and HTTPS is on --></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>Business email on the domain: <a href="mailto:hello@octobar.dev">hello@octobar.dev</a>. Listed in the contacts.<span class="tag">check manually</span><!-- EDIT: confirm the mailbox receives mail --></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>Short product description on the home page.<span class="tag tag--done">done on the site</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>Game screenshots and video on the home page.<span class="tag tag--done">done on the site</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>Privacy policy: <a href="privacy.html">privacy.html</a>.<span class="tag tag--done">done on the site</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>A working Claude feature, not only plans. The current public build does not use Claude yet; the patron-dialogue integration is in development and described above.<span class="tag">to do: ship a playable prototype</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>Claude Console account on the business email. Created outside the site.<span class="tag">manual</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span>Legal entity, founding date and country of registration.<span class="tag">manual</span><!-- EDIT: incorporation details --></span></li>
+    </ul>
+
+    <h2>Team</h2>
+    <!-- EDIT: team members. Names are the credited authors on the game page (they may be nicknames). Roles are not stated there, so confirm real names and add roles. -->
+    <ul>
+      <li>Servooshka — <!-- EDIT: role --></li>
+      <li>I'm Zomino — <!-- EDIT: role --></li>
+      <li>Fayenowo — <!-- EDIT: role --></li>
+    </ul>
+
+    <h2>What we do not state</h2>
+    <p>This page has no figures on audience, revenue, funding or copies sold. We will add them once the data is verified.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p><strong>Octobar</strong></p>
+        <p>Contact: <a href="mailto:hello@octobar.dev">hello@octobar.dev</a></p>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://servooshka.itch.io/octobar" target="_blank" rel="noopener">Game page</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+      </ul>
+      <p>© 2026 Octobar</p>
+    </div>
+  </footer>
+</body>
+</html>

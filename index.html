@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Octobar: an octopus bartender game</title>
+  <meta name="description" content="Octobar is a barman simulator. Mix drinks from two ingredients, serve them to bar guests and keep an eye on their patience.">
+  <link rel="canonical" href="https://octobar.dev/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Octobar">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Octobar: an octopus bartender game">
+  <meta property="og:description" content="Mix drinks from two ingredients, serve them to bar guests and keep an eye on their patience.">
+  <meta property="og:url" content="https://octobar.dev/">
+  <meta property="og:image" content="https://octobar.dev/assets/game/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Octobar</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#patrons">Guests</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#how">How to play</a>
+        <a href="startups.html">Claude for Startups</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__bg" src="assets/img/hero-background.webp" width="1600" height="900"
+           alt="Warm wooden texture of a bar counter, the background of the game's main menu" fetchpriority="high">
+      <div class="container hero__content">
+        <p class="eyebrow">Indie game</p>
+        <h1 id="hero-title" class="hero__title">Octobar</h1>
+        <p class="hero__tagline">You are an octopus bartender. Mix drinks before the guests run out of patience.</p>
+        <div class="hero__actions">
+          <a class="btn" href="https://servooshka.itch.io/octobar" target="_blank" rel="noopener">Download for Windows</a>
+          <a class="btn btn--ghost" href="#trailer">Trailer</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <p class="eyebrow">About the game</p>
+        <h2 id="about-title">A bar that runs on you</h2>
+
+        <!-- GAME-TEXT: replace with game description -->
+        <div class="about__text" lang="en">
+          <p>Octobar is a barmen simulator set in the alternative 1920s, where you work as an octopus-barmen serving up drinks for monstrous customers and learning their stories while doing so. It is a puzzle-strategy mashup where you'll need to plan out your movements before acting upon them, hopefully spicing up a well established game loop of this genre</p>
+        </div>
+        <!-- /GAME-TEXT -->
+
+        <ul class="facts" aria-label="Key numbers">
+          <li><strong>3</strong><span>shift days</span></li>
+          <li><strong>4</strong><span>ingredients</span></li>
+          <li><strong>6</strong><span>drinks</span></li>
+          <li><strong>9</strong><span>guests in the campaign</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="screenshots" class="section" aria-labelledby="shots-title">
+      <div class="container">
+        <p class="eyebrow">Screenshots</p>
+        <h2 id="shots-title">From the game</h2>
+        <ul class="shots" role="list">
+          <li>
+            <img src="assets/game/screenshot-1.webp" width="1912" height="1064" loading="lazy"
+                 alt="Game: the guest Evelin asks for a drink at the bar, the order panel shows the ingredients">
+          </li>
+          <li>
+            <img src="assets/game/screenshot-2.webp" width="1906" height="1066" loading="lazy"
+                 alt="Game: the bar counter with a shaker and the ingredients for a drink">
+          </li>
+          <li>
+            <img src="assets/game/screenshot-3.webp" width="1754" height="972" loading="lazy"
+                 alt="Game: the guest Furry thanks you for the drink, the order panel shows the ingredients">
+          </li>
+          <li>
+            <img src="assets/game/screenshot-4.webp" width="1912" height="1068" loading="lazy"
+                 alt="Game: the end-of-day score screen with the number of guests served (SERVED) and missed (MISSED)">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="info" class="section" aria-labelledby="info-title">
+      <div class="container">
+        <p class="eyebrow">The game</p>
+        <h2 id="info-title">Information</h2>
+        <p class="section__lead">Key details about the game. Team roles are not listed here.</p>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th scope="row">Status</th><td>In development</td></tr>
+              <tr><th scope="row">Format</th><td>A downloadable game for Windows</td></tr>
+              <tr><th scope="row">Files</th><td>Octobar.exe, 268 MB</td></tr>
+              <tr><th scope="row">Platforms</th><td>Windows</td></tr>
+              <tr><th scope="row">Authors</th><td>Servooshka, I'm Zomino, Fayenowo</td></tr>
+              <tr><th scope="row">Genre</th><td>Simulation, Strategy</td></tr>
+              <tr><th scope="row">Tags</th><td>Atmospheric, Audio, Cozy, First-Person, Indie, Management, Short, Singleplayer</td></tr>
+              <tr><th scope="row">Made with</th><td>Godot</td></tr>
+              <tr><th scope="row">Price</th><td>Free</td></tr>
+              <tr><th scope="row">Updated</th><td>14 September 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="patrons" class="section" aria-labelledby="patrons-title">
+      <div class="container">
+        <p class="eyebrow">Characters</p>
+        <h2 id="patrons-title">Guests of the bar</h2>
+        <p class="section__lead">Nine guests in the campaign. Each has their own lines: when entering, after a successful order, and when leaving unhappy.</p>
+
+        <ul class="grid" role="list">
+          <li class="card card--patron">
+            <img src="assets/img/patrons/evelin.webp" width="674" height="700" loading="lazy"
+                 alt="Evelin: a dark silhouette with a voluminous head, wearing a cloak">
+            <figcaption><strong>Evelin</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/furry.webp" width="674" height="700" loading="lazy"
+                 alt="Furry: a man with curly hair, in a shirt with a tie and suspenders">
+            <figcaption><strong>Furry</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/gombik.webp" width="674" height="700" loading="lazy"
+                 alt="Gombik: a round character with two long ears">
+            <figcaption><strong>Gombik</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/mr-krys.webp" width="674" height="700" loading="lazy"
+                 alt="MrKrys: a character in a double-breasted jacket, with a rodent's head and a hat">
+            <figcaption><strong>MrKrys</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/sun.webp" width="674" height="700" loading="lazy"
+                 alt="Sun: a dark figure with a yellow star instead of a head">
+            <figcaption><strong>Sun</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/worm.webp" width="674" height="700" loading="lazy"
+                 alt="Worm: a creature with a yellow body and a long neck, looking to the side">
+            <figcaption><strong>Worm</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/big-talk.webp" width="674" height="700" loading="lazy"
+                 alt="Big Talk: a figure in a yellow robe with a large toothy mouth">
+            <figcaption><strong>Big Talk</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/guy.webp" width="674" height="700" loading="lazy"
+                 alt="Guy: a character in a coat with a fluffy head that looks like a bird">
+            <figcaption><strong>Guy</strong>Campaign character</figcaption>
+          </li>
+          <li class="card card--patron">
+            <img src="assets/img/patrons/lady-moth.webp" width="674" height="700" loading="lazy"
+                 alt="LadyMoth: a lady with long ears, a fur collar and a cane">
+            <figcaption><strong>LadyMoth</strong>Campaign character</figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="drinks" class="section" aria-labelledby="drinks-title">
+      <div class="container">
+        <p class="eyebrow">Drinks and ingredients</p>
+        <h2 id="drinks-title">Four ingredients, six drinks</h2>
+        <p class="section__lead">Each drink is a combination of two of the four ingredients. Six combinations in total.</p>
+
+        <h3 class="subhead">Ingredients</h3>
+        <ul class="grid" role="list">
+          <li class="card">
+            <img src="assets/img/ingredients/ingredient-1.webp" width="560" height="560" loading="lazy"
+                 alt="Ingredient 1: a pile of eyeballs">
+            <figcaption><strong>Ingredient 1</strong>Eyeballs</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/ingredients/ingredient-2.webp" width="560" height="560" loading="lazy"
+                 alt="Ingredient 2: several star-shaped spices">
+            <figcaption><strong>Ingredient 2</strong>Star spices</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/ingredients/ingredient-3.webp" width="560" height="560" loading="lazy"
+                 alt="Ingredient 3: ice cubes">
+            <figcaption><strong>Ingredient 3</strong>Ice</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/ingredients/ingredient-4.webp" width="560" height="560" loading="lazy"
+                 alt="Ingredient 4: a basket of citrus wedges">
+            <figcaption><strong>Ingredient 4</strong>Citrus wedges</figcaption>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Six drinks</h3>
+        <ul class="grid" role="list">
+          <li class="card">
+            <img src="assets/img/drinks/drink-1-2.webp" width="512" height="512" loading="lazy" alt="Drink made from ingredients 1 and 2 in a glass">
+            <figcaption><strong>1 + 2</strong>Drink</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/drinks/drink-1-3.webp" width="512" height="512" loading="lazy" alt="Drink made from ingredients 1 and 3 in a glass with ice">
+            <figcaption><strong>1 + 3</strong>Drink</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/drinks/drink-1-4.webp" width="512" height="512" loading="lazy" alt="Drink made from ingredients 1 and 4 in a glass">
+            <figcaption><strong>1 + 4</strong>Drink</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/drinks/drink-2-3.webp" width="512" height="512" loading="lazy" alt="Drink made from ingredients 2 and 3 in a glass with ice">
+            <figcaption><strong>2 + 3</strong>Drink</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/drinks/drink-2-4.webp" width="512" height="512" loading="lazy" alt="Drink made from ingredients 2 and 4 in a glass">
+            <figcaption><strong>2 + 4</strong>Drink</figcaption>
+          </li>
+          <li class="card">
+            <img src="assets/img/drinks/drink-3-4.webp" width="512" height="512" loading="lazy" alt="Drink made from ingredients 3 and 4 in a glass with ice">
+            <figcaption><strong>3 + 4</strong>Drink</figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how" class="section" aria-labelledby="how-title">
+      <div class="container">
+        <p class="eyebrow">How to play</p>
+        <h2 id="how-title">A shift behind the bar</h2>
+        <p class="section__lead">Tutorial slides from the game.</p>
+
+        <div class="controls" role="note">
+          Keyboard and mouse controls: <kbd>D</kbd> moves to the next spot behind the bar,
+          <kbd>W</kbd> looks up, <kbd>S</kbd> looks down, under the bar.
+          With the mouse, pick ingredients from the inventory and click the shaker.
+        </div>
+
+        <ul class="slides" role="list">
+          <li>
+            <figure>
+              <img src="assets/img/tutorial/tutorial-1.webp" width="1280" height="720" loading="lazy"
+                   alt="Tutorial slide: 'You are an octopus barman! Your job is to make drinks for guests'">
+              <figcaption>You are an octopus barman. Your job is to make drinks for guests.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/tutorial/tutorial-2.webp" width="1280" height="720" loading="lazy"
+                   alt="Tutorial slide: a guest comes in and orders a drink">
+              <figcaption>A guest comes in and orders a drink.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/tutorial/tutorial-3.webp" width="1280" height="720" loading="lazy"
+                   alt="Tutorial slide: each drink is made from two ingredients; there are four ingredients and six drinks">
+              <figcaption>Each drink is made from two ingredients. There are four ingredients and six drinks.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/tutorial/tutorial-4.webp" width="1280" height="720" loading="lazy"
+                   alt="Tutorial slide: ingredients are scattered around the bar and shown on the minimap; the inventory has four slots">
+              <figcaption>Ingredients are scattered around the bar and shown on the minimap. Look for them under the counter. The inventory has four slots.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/tutorial/tutorial-5.webp" width="1280" height="720" loading="lazy"
+                   alt="Tutorial slide: once all ingredients are collected, click them and then the shaker">
+              <figcaption>Once all the ingredients are collected, click them and then the shaker.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/tutorial/tutorial-6.webp" width="1280" height="720" loading="lazy"
+                   alt="Tutorial slide: guests leave when their patience runs out; the progress bar shows the time left in the shift">
+              <figcaption>Guests don't wait forever: the patience meter sets how many laps they will wait. The bar at the top shows how much of the shift is left.</figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <div class="split" style="margin-top: 48px;">
+          <figure>
+            <img src="assets/img/ui/score-panel.webp" width="560" height="409" loading="lazy"
+                 alt="End-of-day score panel from the game with the words SERVED and MISSED">
+            <figcaption>At the end of the day you can see how many guests were served (SERVED) and how many were missed (MISSED).</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/ui/doors-opened.webp" width="900" height="279" loading="lazy"
+                 alt="'Doors opened' notification from the game on a decorative banner">
+            <figcaption>The "Doors opened" notification from the game.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="trailer" class="section" aria-labelledby="trailer-title">
+      <div class="container">
+        <p class="eyebrow">Video</p>
+        <h2 id="trailer-title">Trailer</h2>
+        <div class="video">
+          <iframe src="https://www.youtube-nocookie.com/embed/A2IqeJ14rjw" title="Octobar video on YouTube"
+                  loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="startups" class="section" aria-labelledby="startups-title">
+      <div class="container">
+        <div class="teaser">
+          <p class="eyebrow">For the team</p>
+          <h2 id="startups-title">Why Octobar needs Claude for Startups</h2>
+          <p class="section__lead">Coming to Octobar: talk to the bar's patrons, powered by Claude (in development). The current public build uses hand-written dialogue, and the Claude for Startups programme would provide API credits to build and test this. Details and our plan are on a separate page.</p>
+          <p><a class="btn btn--ghost" href="startups.html">Read: why we need the programme</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="play-title">
+      <div class="container" style="text-align: center;">
+        <h2 id="play-title">Ready to pour the first drink?</h2>
+        <p><a class="btn" href="https://servooshka.itch.io/octobar" target="_blank" rel="noopener">Download for Windows</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p><strong>Octobar</strong></p>
+        <p>Contact: <a href="mailto:hello@octobar.dev">hello@octobar.dev</a></p>
+      </div>
+      <ul>
+        <li><a href="https://servooshka.itch.io/octobar" target="_blank" rel="noopener">Game page</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="startups.html">Claude for Startups</a></li>
+      </ul>
+      <p>© 2026 Octobar</p>
+    </div>
+  </footer>
+</body>
+</html>

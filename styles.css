@@ -454,6 +454,25 @@ p {
   border: 0;
 }
 
+/* Self-hosted trailer (video element): fluid width, height from the video's own ratio */
+.video--file {
+  display: block;
+  aspect-ratio: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: visible;
+}
+
+.video--file video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--c-line);
+  background: #000;
+}
+
 .video__card {
   max-width: 36ch;
 }

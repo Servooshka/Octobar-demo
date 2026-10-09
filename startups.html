@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261008">
+  <link rel="stylesheet" href="styles.css?v=20261009">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -45,7 +45,6 @@
     <p class="eyebrow">Programme application</p>
     <h1>Why we need the Claude for Startups programme</h1>
     <p>Octobar is a game we have been making as a small team since February 2026; it is published on <a href="https://servooshka.itch.io/octobar" target="_blank" rel="noopener">itch.io</a>. Below is what the Anthropic programme provides, how we plan to use Claude in the game, and what is already in place on the site for the application.</p>
-    <!-- EDIT: add team size, roles and how long the team has worked on Octobar -->
 
     <h2>What the programme provides</h2>
     <p>According to the official programme page <a href="https://claude.com/programs/startups" rel="noopener">claude.com/programs/startups</a>:</p>
@@ -61,7 +60,6 @@
     <div class="note">Programme terms may change, and acceptance decisions are made by Anthropic. Before applying, check the current programme page and terms, not this description.</div>
 
     <h2>How we plan to use Claude in Octobar</h2>
-    <!-- EDIT: review plans -->
     <p><strong>Status: in development — the current public build uses hand-written dialogue.</strong> The Claude API is the core of the next version of Octobar. Nothing in this section is in the released game yet.</p>
     <h3>1. Living patrons</h3>
     <p>Coming to Octobar: players will talk to the bar's patrons in free text, and Claude will answer in character. Each reply is grounded in that patron's own lore and backstory, so Evelin, Furry, Gombik, Mr Krys, Lady Moth, Worm, Sun, Big Talk and Guy each keep a distinct voice across the nine campaign guests.</p>
@@ -80,15 +78,32 @@
     <h3>5. Claude Code for development</h3>
     <p>We will also use Claude Code in day-to-day development of the game.</p>
 
-    <h2>Why credits matter for a small team</h2>
-    <p>Dialogue, balancing and localisation are tasks a small team usually does by hand, and slowly. Starting API credits would let us try these tasks in the first months without budgeting separately for the API, and decide whether to continue.</p>
-    <!-- EDIT: add funding status only if it is public and verified -->
 
     <h2>Team</h2>
-    <ul>
-      <li>Servooshka — Software Engineer</li>
-      <li>I'm Zomino — Game Designer &amp; Artist</li>
-      <li>Fayenowo — Game Designer &amp; Artist</li>
+    <ul class="team" role="list">
+      <li class="team-card">
+        <div class="team-card__body">
+          <h3 class="team-card__name">Sarver Salakhutdinov</h3>
+          <p class="team-card__handle">Servoo</p>
+          <p class="team-card__role">Programmer</p>
+        </div>
+      </li>
+      <li class="team-card">
+        <div class="team-card__body">
+          <h3 class="team-card__name">Dominica Vishnevskaya</h3>
+          <p class="team-card__handle">Zomino</p>
+          <p class="team-card__role">Art, idea and game design</p>
+          <p class="team-card__text">Draws the game's art and graphics, came up with the original idea, shapes the design and writes the story.</p>
+        </div>
+      </li>
+      <li class="team-card">
+        <div class="team-card__body">
+          <h3 class="team-card__name">Vera Eremeeva</h3>
+          <p class="team-card__handle">Fayenowo</p>
+          <p class="team-card__role">Art and game design</p>
+          <p class="team-card__text">Draws the game's art and graphics, shapes the design and designs the in-game economy.</p>
+        </div>
+      </li>
     </ul>
   </main>
 
@@ -102,6 +117,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="https://download.octobar.dev/Octobar.exe" download>Download (Windows)</a></li>
         <li><a href="https://servooshka.itch.io/octobar" target="_blank" rel="noopener">Octobar on itch.io</a></li>
+        <li><a href="press.html">Press kit</a></li>
         <li><a href="privacy.html">Privacy policy</a></li>
       </ul>
       <p>© 2026 Octobar</p>

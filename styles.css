@@ -659,6 +659,111 @@ th {
   font-weight: 700;
 }
 
+/* Team cards (index, startups). Element-qualified so they win over .prose ul/li */
+ul.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.team-card {
+  margin: 0;
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.team-card__body {
+  padding: 18px 18px 22px;
+}
+
+.team-card__name {
+  font-size: 1.25rem;
+  margin: 0 0 4px;
+}
+
+.team-card__handle {
+  font-family: var(--f-type);
+  font-variant-caps: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--c-amber);
+  margin: 0 0 6px;
+}
+
+.team-card__role {
+  font-family: var(--f-type);
+  font-size: 0.95rem;
+  color: var(--c-amber-soft);
+  margin: 0 0 10px;
+}
+
+.team-card__text {
+  font-size: 0.98rem;
+  color: var(--c-muted);
+  margin: 0;
+}
+
+/* Press kit */
+.press-logo {
+  background: #0d0a08;
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius);
+  padding: clamp(20px, 5vw, 48px);
+  max-width: 560px;
+}
+
+.press-logo img {
+  width: 100%;
+  height: auto;
+}
+
+ul.press-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.press-shot,
+li.press-shot figure {
+  margin: 0;
+}
+
+.press-shot img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--c-line);
+}
+
+.press-shot figcaption {
+  font-family: var(--f-type);
+  font-size: 0.92rem;
+  color: var(--c-muted);
+  margin-top: 6px;
+}
+
+ul.press-team {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Responsive */
 @media (max-width: 380px) {
   body {

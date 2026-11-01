@@ -535,7 +535,7 @@ p {
   margin: 0;
 }
 
-/* Startups teaser */
+/* Teaser */
 .teaser {
   background: linear-gradient(135deg, var(--c-surface) 0%, var(--c-wood) 100%);
   border: 1px solid var(--c-line);
@@ -569,7 +569,7 @@ p {
   gap: 6px;
 }
 
-/* Long-form pages (startups, privacy) */
+/* Long-form pages (privacy) */
 .prose {
   max-width: 74ch;
   padding-block: 56px 72px;
@@ -685,7 +685,7 @@ th {
   font-weight: 700;
 }
 
-/* Team cards (index, startups). Element-qualified so they win over .prose ul/li */
+/* Team cards (index). Element-qualified so they win over .prose ul/li */
 ul.team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

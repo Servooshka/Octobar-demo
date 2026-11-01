@@ -808,3 +808,18 @@ ul.press-team {
     transition: none !important;
   }
 }
+
+/* What's new */
+.updates {
+  margin: 0;
+  padding-left: 1.2em;
+  max-width: 62ch;
+}
+
+.updates li {
+  margin-bottom: 0.7em;
+}
+
+.updates strong {
+  color: var(--c-amber-soft);
+}
